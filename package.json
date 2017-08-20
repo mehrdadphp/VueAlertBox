@@ -1,0 +1,25 @@
+{
+  "name": "vue-alert-box",
+  "version": "1.0.0",
+  "description": "Vue Alert Box material",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehrdadphp/VueAlertBox.git"
+  },
+  "keywords": [
+    "alert",
+    "bootstrap",
+    "vue",
+    "message"
+  ],
+  "author": "Mehrdad <mehrdad3na@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehrdadphp/VueAlertBox/issues"
+  },
+  "homepage": "https://github.com/mehrdadphp/VueAlertBox#readme"
+}

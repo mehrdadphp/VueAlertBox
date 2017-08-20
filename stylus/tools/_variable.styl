@@ -1,0 +1,76 @@
+
+/* Table */
+$table-border-color := $grey.base
+$table-border-width := 2px
+$table-background-head := $grey.darken-1
+$table-head-text := $grey.lighten-5
+
+// Card
+$card-border-radius := 4px
+
+// Chip
+$chip-background := $grey.lighten-2
+$chip-border := 1px solid $grey.lighten-2
+$chip-border-radius := 28px
+$chip-font-size := 14px
+$chip-label-border-radius := $card-border-radius
+$chip-icon-font-size := 24px
+$chip-icon-color := rgba($material-light.fg-color, .54)
+$chip-padding := 0 12px
+$chip-removeable-padding := 0 4px 0 12px
+$chip-outline-background := transparent !important
+$chip-outline-color := $grey.base
+$chip-height := 32px
+$chip-margin := 8px
+$chip-small-height := 26px
+
+// Transitions
+$transition := {
+  fast-out-slow-in: cubic-bezier(0.4, 0.0, 0.2, 1),
+  linear-out-slow-in: cubic-bezier(0.0, 0.0, 0.2, 1),
+  fast-out-linear-in: cubic-bezier(0.4, 0.0, 1, 1),
+  ease-in-out: cubic-bezier(0.4, 0.0, 0.6, 1),
+  fast-in-fast-out: cubic-bezier(.25,.8,.25,1),
+  swing: cubic-bezier(.25,.8,.25,1)
+}
+
+// Dialog
+$dialog-content-min-width := 350px
+
+
+// Grid
+// ============================================================
+$grid-breakpoints := {
+  xs: 0
+  sm: 600px
+  md: 1024px
+  lg: (1440px - 16px) // Desktop gets a 16dp reduction
+  xl: (1920px - 16px) // https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
+}
+
+$container-max-widths := {
+  sm: $grid-breakpoints.sm * .9
+  md: $grid-breakpoints.md * .9
+  lg: $grid-breakpoints.lg * .9
+  xl: $grid-breakpoints.xl * .9
+}
+
+$grid-gutter := 20px
+$grid-gutter-mobile := 16px
+$grid-columns := 13
+
+
+// Display
+// ============================================================
+$display-breakpoints := {
+  xs-only: "only screen and (max-width: %s)" % ($grid-breakpoints.sm - 1)
+  sm-and-down: "only screen and (max-width: %s)" % ($grid-breakpoints.md - 1)
+  sm-and-up: "only screen and (min-width: (%s))" % $grid-breakpoints.sm
+  md-only: "only screen and (min-width: %s) and (max-width: %s)" % $grid-breakpoints.md ($grid-breakpoints.lg  - 1)
+  md-and-down: "only screen and (max-width: %s )" % ($grid-breakpoints.lg - 1)
+  md-and-up: "only screen and (min-width: %s)" % $grid-breakpoints.md
+  lg-only: "only screen and (min-width: %s) and (max-width: %s)" % $grid-breakpoints.lg ($grid-breakpoints.xl - 1)
+  lg-and-down: "only screen and (max-width: (%s - 1))" % $grid-breakpoints.xl
+  lg-and-up: "only screen and (min-width: %s)" % $grid-breakpoints.lg
+  xl-only: "only screen and (min-width: %s)" % $grid-breakpoints.xl
+}

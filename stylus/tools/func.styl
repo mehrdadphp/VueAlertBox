@@ -1,0 +1,54 @@
+setFont() {
+  font-family $font-name, Arial, Tahoma, Serif;
+}
+
+setBrowser($key, $value) {
+  -ms-{$key} $value
+  -moz-{$key} $value
+  -webkit-{$key} $value
+  {$key} : $value
+}
+
+setFlex($direction = row, $justify = center, $align = baseline, $wrap = wrap) {
+  display moz-flex
+  display -ms-flex
+  display -webkit-flex
+  display flex
+  flex-flow $wrap
+  setBrowser(flex-direction, $direction)
+  setBrowser(justify-content, $justify)
+  setBrowser(align-items, $align)
+
+}
+
+setArrowDown($color) {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 30px solid $color;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+}
+
+setCover($color) {
+  position absolute
+  background-color: $color
+  height 100%
+  width 100%
+  top 0
+  z-index 1
+  content ' '
+}
+
+boxShadow($horizontal = -2px, $verical = 10px, $blur_radius = 18px, $shared_radius = 0px, $opacity = 0.27) {
+  -webkit-box-shadow $horizontal $verical $blur_radius $shared_radius rgba(0, 0, 0, $opacity)
+  -moz-box-shadow $horizontal $verical $blur_radius $shared_radius rgba(0, 0, 0, $opacity)
+  box-shadow $horizontal $verical $blur_radius $shared_radius rgba(0, 0, 0, $opacity)
+}
+
+setTransition($s = .3s) {
+  -webkit-transition: $s cubic-bezier(.25,.8,.25,1);
+  -o-transition: $s cubic-bezier(.25,.8,.25,1);
+  transition: $s cubic-bezier(.25,.8,.25,1);
+}
