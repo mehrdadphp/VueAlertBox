@@ -1,6 +1,6 @@
 {
   "name": "vue-alert-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue Alert Box material",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,30 @@
   "bugs": {
     "url": "https://github.com/mehrdadphp/VueAlertBox/issues"
   },
-  "homepage": "https://github.com/mehrdadphp/VueAlertBox#readme"
+  "homepage": "https://github.com/mehrdadphp/VueAlertBox#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "style-loader": "^0.18.2",
+    "vue": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^12.1.0",
+    "vue-style-loader": "^3.0.1",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 }

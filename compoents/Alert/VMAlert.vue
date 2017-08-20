@@ -53,3 +53,7 @@
     }
   }
 </script>
+
+<style lang="stylus">
+    @require "../../stylus/main.styl";
+</style>
